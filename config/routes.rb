@@ -20,5 +20,5 @@ Rails.application.routes.draw do
   end
   end
   resources :cart_items
-  resoutces :orders
+  resources :orders
 end

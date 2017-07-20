@@ -7,4 +7,9 @@ class Admin::OrdersController < ApplicationController
   def index
     @orders = Oder.order("id DESC")
   end
+
+  def Show
+    @order = Order.find(params[:id])
+    @product_lists = @order.product_lists
+  end
 end
